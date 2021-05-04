@@ -18,8 +18,8 @@ for i in range(allowed_comb + 1):
     Max_sum = max(Window_sum, Max_sum)
     summer = array[i:i+allowed_comb]
     dctn[i] = sum(summer)
-    print('{} equals {}'.format(summer,sum(summer)))
+    #print('{} equals {}'.format(summer,sum(summer)))
     keys = [k for k, v in dctn.items() if v == Max_sum]
 
-print(Max_sum,array[keys[0]:keys[0]+(K)])
+print('The Max_sum is this {} and values that produced it are {}'.format(Max_sum, array[keys[0]:keys[0]+(K)]))
 
